@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>插入数据</title>
+    </head>
+    <body>
+        <form action="/insert" method="post">
+            <p>商品名: <input type="text" name="product" /></p>
+            <p>顾客: <input type="text" name="customer" /></p>
+            <p>卖出价: <input type="text" name="price" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')" onafterpaste="this.value=this.value.replace(/[^0-9]/g,'')"/></p>
+            <p>买入价: <input type="text" name="buy" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')" onafterpaste="this.value=this.value.replace(/[^0-9]/g,'')"/></p>
+            <input type="submit" value="提交">
+        </form>
+    </body>
+</html>
