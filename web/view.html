@@ -7,23 +7,24 @@
     <body>
         <table border="1" cellpadding="10" cellspacing="2" frame="box">
             <thead>
-                <th>商品名</th>
-                <th>顾客</th>
-                <th>卖出价</th>
-                <th>买入价</th>
-                <th>利润</th>
-                <th>日期</th>
+                <th id="th0"  class="as">商品名</th>
+                <th id="th1"  class="as">顾客</th>
+                <th id="th2"  class="as">卖出价</th>
+                <th id="th3"  class="as">买入价</th>
+                <th id="th4"  class="as">利润</th>
+                <th id="th5"  class="as">日期</th>
             </thead>
             {{range .Items}}
-            <tbody>
-                <th>{{.Product}}</th>
-                <th>{{.Customer}}</th>
-                <th>{{.Price}}</th>
-                <th>{{.Buy}}</th>
-                <th>{{.Profit}}</th>
-                <th>{{.Date}}</th>
-            </tbody>
+            <tr>
+                <td name="td0">{{.Product}}</td>
+                <td name="td1">{{.Customer}}</td>
+                <td name="td2">{{.Price}}</td>
+                <td name="td3">{{.Buy}}</td>
+                <td name="td4">{{.Profit}}</td>
+                <td name="td5">{{.Date}}</td>
+            </tr>
             {{end}}
         </table>
     </body>
 </html>
+
